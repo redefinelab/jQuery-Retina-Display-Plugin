@@ -1,14 +1,14 @@
 /*
 	Author: Troy Mcilvena (http://troymcilvena.com)
 	Twitter: @mcilvena
-	Date: 10 November 2010
-	Version: 1.2
+	Date: 24 November 2011
+	Version: 1.3
 	
 	Revision History:
 		1.0 (23/08/2010)	- Initial release.
 		1.1 (27/08/2010)	- Made plugin chainable
 		1.2 (10/11/2010)	- Fixed broken retina_part setting. Wrapped in self executing function (closure)
-		1.3 (29/10/2011)	- Checked if source has already been updated
+		1.3 (29/10/2011)	- Checked if source has already been updated (via mattbilson)
 */
 
 (function( $ ){
