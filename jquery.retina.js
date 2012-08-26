@@ -22,8 +22,8 @@
 			this.each(function(index, element) {
 				if(!$(element).attr('src')) return;
 
-            	var width = $(element).width();
-            	var height = $(element).height();
+				var width = $(element).width();
+				var height = $(element).height();
 				
 				var checkForRetina = new RegExp("(.+)("+settings['retina_part']+"\\.\\w{3,4})");
 				if(checkForRetina.test($(element).attr('src'))) return;
@@ -31,8 +31,8 @@
 				var new_image_src = $(element).attr('src').replace(/(.+)(\.\w{3,4})$/, "$1"+ settings['retina_part'] +"$2");
 				$.ajax({url: new_image_src, type: "HEAD", success: function() {
 					$(element).attr('src', new_image_src);
-                    $(element).width(width);
-                    $(element).height(height);
+					$(element).width(width);
+					$(element).height(height);
 				}});
 			});
 		}
